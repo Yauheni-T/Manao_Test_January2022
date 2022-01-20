@@ -2,7 +2,7 @@
 
 session_start();
 
-include 'cls\global_class.php';
+include 'cls\global_class.php'; // URL
 
 $open_page = new Page;
 $open_page->checkCookie();
@@ -26,6 +26,7 @@ $user_status = $open_page->user_status;
     <header>
 
       <?php if($user_status == "login"): ?>
+
       <!-- Form Logout -->
       <div class="welcom">
         <form name="logout" method="post" action="">
