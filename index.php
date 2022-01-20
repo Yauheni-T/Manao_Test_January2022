@@ -2,7 +2,7 @@
 
 session_start();
 
-include 'cls/global_class.php';
+include 'cls\global_class.php';
 
 $open_page = new Page;
 $open_page->checkCookie();
@@ -17,9 +17,9 @@ $user_status = $open_page->user_status;
     <title>Главная страница сайта</title>
     <meta name="description" content="Описание страницы" />
         
-    <link rel="stylesheet" type="text/css" href="css/style.css" />  <!-- URL -->
+    <link rel="stylesheet" type="text/css" href="css\style.css" />  <!-- URL -->
     <link rel="icon" href="">
-    <script type="text/javascript" src="js/formfetch.js"></script>  <!-- URL -->
+    <script type="text/javascript" src="js\formfetch.js"></script>  <!-- URL -->
 
   </head>
   <body>
@@ -42,7 +42,7 @@ $user_status = $open_page->user_status;
       
       <!-- Form Login -->
       <div id="openlogin" class="modform">
-        <form action="php/login.php" class="login" id="login">  <!-- URL -->
+        <form action="php\login.php" class="login" id="login">  <!-- URL -->
           <div class="conteiner">
             <span class="close" onclick="closeLogin()">Закрыть</span>
           </div>
@@ -68,7 +68,7 @@ $user_status = $open_page->user_status;
       
       <!-- Form Signup -->
       <div class="modform" id="opensignup">
-        <form action="php/signup.php" class="signup" id="signup"> <!-- URL -->
+        <form action="php\signup.php" class="signup" id="signup"> <!-- URL -->
           <div class="conteiner">
             <span class="close" onclick="closeSignup()">Закрыть</span>
           </div>
@@ -114,8 +114,8 @@ $user_status = $open_page->user_status;
       <?php
 
       $show_content = new Page;
-      $show_content->page = "html/main.txt";
-      $show_content->page_err = "html/logout.txt";
+      $show_content->page = "html\main.txt";  // URL
+      $show_content->page_err = "html\logout.txt";  // URL
       $show_content->user_status = $open_page->user_status;
       $show_content->getPage();
      
