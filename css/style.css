@@ -1,0 +1,137 @@
+body {
+    display: block;
+}
+
+header {
+    background-color: #add8e6;
+    display: block;
+    width: 100%;
+    height: 150px;
+}
+
+nav {
+    background-color: #ffaa00;
+    display: block;
+    width: 100%;
+    height:  40px;
+    text-align: center;
+    padding: 5px;
+}
+
+main {
+    display: block;
+    width: 80%;
+    float: left;
+}
+
+aside {
+    background-color: #d3d3d3;
+    display: block;
+    width: 20%;
+    height: auto;
+    float: right;
+}
+
+footer {
+    background-color: rgb(230, 230, 100);
+    display: block;
+    width: 100%;
+    height: 150px;
+    clear: both;
+    text-align: center;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+button {
+    background-color: #006400;
+    border: none;
+    color: white;
+    display: block;
+    margin: 20px;
+    padding: 10px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+input {
+    box-sizing: border-box;
+    display: inline-block;
+    margin: 5px 0 5px 0;
+    padding: 6px 10px;
+    width: 100%;
+}
+
+input.out {
+    width: auto;
+}
+
+div.error {
+    margin-bottom: 20px;
+    color: red;
+}
+
+div.modform,
+div.signup_success,
+div.login_success {
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    overflow: auto;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+form.login, form.signup {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto;
+    padding: 16px;
+    width: 50%;
+}
+
+.conteiner {
+    position: relative;
+    margin: 16px 0;
+}
+
+.close {
+    position: absolute;
+    padding: 0px;
+    right: 5px;
+    top: -16px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+aside {
+    text-align: center;
+}
+
+div.message {
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 10px;
+    width: 30%;
+}
+
+.window_close {
+    margin: 10px auto;
+}
